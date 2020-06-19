@@ -1,0 +1,4 @@
+numpy==1.18.4
+PyAudio==0.2.11
+pycrypto==2.6.1
+pyTelegramBotAPI==3.7.1
