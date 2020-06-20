@@ -68,7 +68,8 @@ class Listen:
         except:
             encryptor.lock_folder(self.PASSWORD, self.folder)
             print('code quited, folder was encrypted', file=sys.stderr)
-            self.stream.close()
+            if self.stream is not None:
+                self.stream.close()
             sys.exit(1)
 
     def process_frames(self):
