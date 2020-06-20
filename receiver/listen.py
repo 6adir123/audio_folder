@@ -69,6 +69,7 @@ class Listen:
             encryptor.lock_folder(self.PASSWORD, self.folder)
             print('code quited, folder was encrypted', file=sys.stderr)
             if self.stream is not None:
+                self.stream.stop_stream()
                 self.stream.close()
             sys.exit(1)
 
