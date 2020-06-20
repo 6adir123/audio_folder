@@ -24,6 +24,7 @@ class Listen:
         self.char_delim = [int(x) for x in options.char_delim]  # the  character delimiter   
         self.word_delim = ' '  # the word delimiter
         self.frames_per_buffer = self.chunk * 10  # the amount of frames per buffer (for pyaudio)
+        self.stream = None  # the audio stream of pyaudio
         # raw audio frames
         self.in_frames = queue.Queue(options.in_length)
         # fft points
@@ -53,8 +54,8 @@ class Listen:
             thread = threading.Thread(target=func)
             thread.daemon = True
             thread.start()
-        self.t.reset() # start the wrong password timer
-        self.freq_t.reset() #start the wrong frequency timer
+        self.t.reset()  # start the wrong password timer
+        self.freq_t.reset()  # start the wrong frequency timer
         self.start_analyzing_stream()
 
     def time_stop(self):
@@ -67,6 +68,7 @@ class Listen:
         except:
             encryptor.lock_folder(self.PASSWORD, self.folder)
             print('code quited, folder was encrypted', file=sys.stderr)
+            self.stream.close()
             sys.exit(1)
 
     def process_frames(self):
@@ -152,7 +154,7 @@ class Listen:
             while len(current_bits) < len(self.char_delim) or current_bits[-len(self.char_delim):len(
                     current_bits)] != self.char_delim:  # check and splits letters by delimiter
                 if len(current_bits) > 12:
-                    print('please make sure to adjust volume', file=sys.stderr)
+                    print('please make sure to adjust volume / phone position', file=sys.stderr)
                     current_bits = []
                 try:
                     current_bits.append(self.bits.get(False))
@@ -191,7 +193,7 @@ class Listen:
             except:
                 self.time_stop()
             if self.t.check_difference() > self.interval:
-                encryptor.lock_folder(self.PASSWORD,self.folder)
+                encryptor.lock_folder(self.PASSWORD, self.folder)
                 self.PASSWORD = ''
 
     def callback(self, in_data, frame_count, time_info,
@@ -217,10 +219,10 @@ class Listen:
         """
 
         p = pyaudio.PyAudio()
-        stream = p.open(format=self.FORMAT, channels=options.channels, rate=options.rate,
-                        input=True, frames_per_buffer=self.frames_per_buffer, stream_callback=self.callback)
-        stream.start_stream()
-        while stream.is_active():
+        self.stream = p.open(format=self.FORMAT, channels=options.channels, rate=options.rate,
+                             input=True, frames_per_buffer=self.frames_per_buffer, stream_callback=self.callback)
+        self.stream.start_stream()
+        while self.stream.is_active():
             self.time_stop()
 
 

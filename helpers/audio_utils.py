@@ -48,9 +48,6 @@ def fft(signal):
     return abs(fft_sample), len(windowed)
 
 
-
-
-
 def get_peak(hertz, rate, chunk):
     """
     :param hertz: frequency
@@ -70,7 +67,8 @@ def get_freq(fft_sample, window_length, rate):
     based on https://ccrma.stanford.edu/~jos/sasp/Quadratic_Interpolation_Spectral_Peaks.html
     """
     max_freq = np.argmax(abs(fft_sample))  # max fft frequency (not accurate)
-    true_max_freq = parabolic(np.log(abs(fft_sample)), max_freq)  # using the quadratic interpolation in order to get the most accurate frequency index
+    true_max_freq = parabolic(np.log(abs(fft_sample)),
+                              max_freq)  # using the quadratic interpolation in order to get the most accurate frequency index
     return rate * true_max_freq / window_length  # the frequency itself
 
 
@@ -151,5 +149,9 @@ def parabolic(f, x):
     :param x: an index of a vector
     :return: x_coordinate: the x coordinate of the vertex of the parabola that goes through point x and its two neighbors
     """
-    x_coordinate = 1 / 2 * (f[x - 1] - f[x + 1]) / (f[x - 1] - 2 * f[x] + f[x + 1]) + x
-    return x_coordinate
+    try:
+        x_coordinate = 1 / 2 * (f[x - 1] - f[x + 1]) / (f[x - 1] - 2 * f[x] + f[x + 1]) + x
+        return x_coordinate
+    # there may be a runtime error at the beginning of the program, due o division by zero, this will fix the problem
+    except RuntimeError:
+        return 0
