@@ -5,7 +5,7 @@ from Crypto import Random
 import os
 import shutil
 import zipfile
-from helpers.options import keyword, salt
+from .options import keyword, salt
 import sys
 import logging
 universe = [c for c in (chr(i) for i in range(32, 127))]

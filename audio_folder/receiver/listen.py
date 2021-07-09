@@ -3,8 +3,8 @@ import threading
 import time
 import pyaudio
 import sys
-from helpers import encryptor, audio_utils, bit_translator, options
-from receiver import timer, folder_setup
+from audio_folder.helpers import encryptor, audio_utils, bit_translator, options
+from audio_folder.receiver import timer, folder_setup
 import os
 import logging
 import sqlite3

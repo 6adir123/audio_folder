@@ -1,6 +1,6 @@
-from helpers import audio_utils, bit_translator, options
+from audio_folder.helpers import audio_utils, bit_translator, options
 import wave
-from helpers.encryptor import vigenere
+from audio_folder.helpers.encryptor import vigenere
 
 CHANNELS = options.channels
 RATE = options.rate

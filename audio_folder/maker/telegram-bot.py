@@ -1,6 +1,6 @@
 import telebot
-from maker import send
-from helpers import bit_translator
+import send
+from audio_folder.helpers import bit_translator
 import os
 
 API_TOKEN = input('enter API token: ')

@@ -1,4 +1,4 @@
-from helpers import encryptor, bit_translator
+from audio_folder.helpers import encryptor, bit_translator
 import os
 from getpass import getpass
 import sys
