@@ -1,103 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c13b0f4-fa9e-4a2c-a17a-9c651d9ca377" name="Default Changelist" comment="changes">
-      <change beforePath="$PROJECT_DIR$/maker/send.py" beforeDir="false" afterPath="$PROJECT_DIR$/maker/send.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maker/telegram-bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/maker/telegram-bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/receiver/folders.db" beforeDir="false" afterPath="$PROJECT_DIR$/receiver/folders.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/receiver/listen.log" beforeDir="false" afterPath="$PROJECT_DIR$/receiver/listen.log" afterDir="false" />
+    <list default="true" id="8c13b0f4-fa9e-4a2c-a17a-9c651d9ca377" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio_folder/receiver/folder_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio_folder/receiver/folder_setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio_folder/receiver/folders.db" beforeDir="false" afterPath="$PROJECT_DIR$/audio_folder/receiver/folders.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio_folder/receiver/listen.log" beforeDir="false" afterPath="$PROJECT_DIR$/audio_folder/receiver/listen.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio_folder/receiver/listen.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio_folder/receiver/listen.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/helpers/audio_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="127" column="27" selection-start-line="127" selection-start-column="27" selection-end-line="127" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/receiver/folder_setup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="255">
-                <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maker/telegram-bot.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maker/send.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="662">
-              <caret line="58" column="40" lean-forward="true" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/helpers/encryptor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/receiver/listen.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="-2139" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/receiver/timer.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -133,6 +47,7 @@
     <option name="width" value="1792" />
     <option name="height" value="1009" />
   </component>
+  <component name="ProjectId" id="1v4wEdW2aEdVAepFvFQonSHmjfx" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -167,26 +82,19 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/audio_folder" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/hello" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python.telegram-bot (1)">
     <configuration name="listen (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -303,14 +211,15 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.listen (2)" />
         <item itemvalue="Python.telegram-bot (1)" />
+        <item itemvalue="Python.listen (2)" />
         <item itemvalue="Python.listen (1)" />
         <item itemvalue="Python.telegram-bot" />
         <item itemvalue="Python.listen" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -364,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591798712086</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="changes">
+      <created>1625834773278</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1625834773278</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">

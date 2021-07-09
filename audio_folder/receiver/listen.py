@@ -258,7 +258,7 @@ def main(folder_path=None):
     while True:
 
         if folder_path is None:
-            folder_path = os.path.abspath(input('enter folder name: '))
+            folder_path = os.path.abspath('../../../' + input('enter folder name: '))
             if not os.path.isfile(encryptor.insert_enc_tag(folder_path) + '.zip'):
                 if os.path.isdir(folder_path) and folder_path != os.getcwd():
                     print('Folder isn\'t setup-ed, redirecting to folder setup', file=sys.stderr)

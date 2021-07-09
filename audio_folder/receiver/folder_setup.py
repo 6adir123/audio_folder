@@ -46,7 +46,8 @@ def sql_setup(folder_path):
     while True:
         try:
             password = getpass('enter password: ')
-            if  len(password) <= 10 or bit_translator.encode(password) == '' or password.find(' ') >= 0 or not password[0:9].isdigit() or \
+            if len(password) <= 10 or bit_translator.encode(password) == '' or password.find(' ') >= 0 or not password[
+                                                                                                              0:9].isdigit() or \
                     password[9] != ':':
                 raise Exception(
                     '''password must be varicode compatible, shouldn\'t include spaces, 
@@ -88,7 +89,7 @@ def main():
     delete_from_sql()
     while True:
         try:
-            folder_path = os.path.abspath(input('enter folder name: '))
+            folder_path = os.path.abspath('../../../' + input('enter folder name: '))
             if not os.path.isdir(folder_path):
                 raise Exception('the  un-setup-ed folder doesn\'t exist')
             removed_folder = encryptor.insert_enc_tag(folder_path) + '.zip'
